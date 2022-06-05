@@ -1,66 +1,98 @@
 * {
     box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+
 }
 
 body {
     font-family: "Karla", sans-serif;
     margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    background-color: rgb(43, 43, 43);
 }
 
 .header {
-    display: flex;
-    align-items: center;
     height: 65px;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
     color: white;
     padding: 20px;
-}
-
-.header--image {
-    height: 100%;
-    margin-right: 6px;
-}
-
-.header--title {
-    font-size: 1.25rem;
-    margin-right: auto;
-}
-
-.header--project {
-    font-size: 0.75rem;
-    font-weight: 500;
-}
-
-.meme{
-    margin-top: 30px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.app{
+    background: white;
+    height: 100%;
+}
+
+.header >h4{
+    width: 189px;
+    height: 14px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    
+    text-align: right;
+    margin-right: 20px;
+    color: #FFFFFF;
+}
+
+.header--logo{
+    display: flex;
     align-items: center;
 }
 
-.meme--inputs{
-    width: 400px;
-    display: flex;
-    justify-content: space-between
+.header--logo >*{
+    margin-left: 10px;
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.7482px;
+    line-height: 24px;
+    letter-spacing: -0.1em;
+
+    color: #FFFFFF;
 }
 
-.meme--inputs >input{
-    border-radius: 15px;
-    width: 48%;
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 2px;
+.header--image {
+    width: 40px;
 }
 
-.meme--button{
-    color: white;
+.form{
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.form >*{
+    padding: 10px;
+}
+.form--button{
+    padding: 15px;
+    grid-column: 1 / -1;
+    /* makes the button span the column */
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
     
-    width: 400px;
-    height: 40px;
-    left: 36px;
-    top: 151px;
-
-    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    letter-spacing: -0.1em;
     border-radius: 5px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    cursor: pointer;
 }
 
+.form--input{
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+
+}

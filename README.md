@@ -1,3 +1,11 @@
+# meme generator website
+this project lets the user add text to a random "meme" image. 
+Built with react.
+
+This project introduced me to real time changes using state.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
